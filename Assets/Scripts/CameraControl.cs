@@ -2,15 +2,15 @@
 
 public class CameraControl : MonoBehaviour
 {
-    public Camera cam;
+    [SerializeField] Camera cam;
 
     [Header("Zoom Settings")]
-    public float zoomSpeed = 0.2f;       // Zoom speed (8f for mouse)
-    public float minZoom = 20f;           // Limit zoom
-    public float maxZoom = 80f;          // Limit zoom 
+    [SerializeField] float zoomSpeed = 0.2f;       // Zoom speed (8f for mouse)
+    [SerializeField] float minZoom = 20f;           // Limit zoom
+    [SerializeField] float maxZoom = 80f;          // Limit zoom 
 
     [Header("Pan Settings")]
-    public float panSpeed = 0.2f;        // Camera pan speed (0.005 for mouse)
+    [SerializeField] float panSpeed = 0.2f;        // Camera pan speed (0.005 for mouse)
 
     private Vector3 lastPanPosition;     // Previous touch position
     private int panFingerId;             // ID finger pan

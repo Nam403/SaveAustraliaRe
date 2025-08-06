@@ -7,18 +7,18 @@ public class WaveSpawner : MonoBehaviour
 {
     public static int MonstersAlive = 0;
 
-    public Wave[] waves;
+    [SerializeField] Wave[] waves;
 
-    public Transform spawnPoint;
+    [SerializeField] Transform spawnPoint;
 
-    public float timeBetweenWaves = 5f;
+    [SerializeField] float timeBetweenWaves = 5f;
     private float countdown = 5f;
 
     private int waveIndex = 0;
 
-    public TextMeshProUGUI waveCountDownText;
+    [SerializeField] TextMeshProUGUI waveCountDownText;
 
-    public GameManager gameManager;
+    [SerializeField] GameManager gameManager;
 
     void Update()
     {

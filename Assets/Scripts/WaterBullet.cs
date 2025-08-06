@@ -4,11 +4,11 @@ public class WaterBullet : MonoBehaviour
 {
     private Transform target;
 
-    public float speed = 4f;
+    [SerializeField] float speed = 4f;
 
-    public int damage = 20;
+    [SerializeField] int damage = 20;
 
-    public GameObject impactEffect;
+    [SerializeField] GameObject impactEffect;
 
     public void Seek (Transform _target)
     {

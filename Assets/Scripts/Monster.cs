@@ -4,14 +4,14 @@ public class Monster : MonoBehaviour
 {
     public float startSpeed = 2f;
     
-    [HideInInspector]    
+    [HideInInspector]
     public float speed;
 
-    public float health = 100;
+    [SerializeField] float health = 100;
 
-    public int worth = 20;
+    [SerializeField] int worth = 20;
 
-    public GameObject deathEffect;
+    [SerializeField] GameObject deathEffect;
 
     private bool isDead = false;
 

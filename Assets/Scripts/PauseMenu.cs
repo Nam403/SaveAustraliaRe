@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject ui;
+    [SerializeField] GameObject ui;
 
-    public string menuSceneName = "MainMenu";
+    [SerializeField] string menuSceneName = "MainMenu";
 
-    public SceneFader sceneFader;
+    [SerializeField] SceneFader sceneFader;
 
     public void LoadPauseMenu()
     {

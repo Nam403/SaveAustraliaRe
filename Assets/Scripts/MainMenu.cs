@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public string levelToLoad = "LevelSelect";
-    public SceneFader sceneFader;
+    [SerializeField] string levelToLoad = "LevelSelect";
+    [SerializeField] SceneFader sceneFader;
 
     public void Play()
     {

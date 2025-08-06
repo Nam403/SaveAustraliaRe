@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
-    public SceneFader fader;
+    [SerializeField] SceneFader fader;
 
-    public Button[] levelButtons;
+    [SerializeField] Button[] levelButtons;
 
     void Start()
     {

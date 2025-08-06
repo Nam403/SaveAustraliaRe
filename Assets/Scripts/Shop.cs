@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    public TowerPrint redTower;
-    public TowerPrint blueTower;
+    [SerializeField] TowerPrint redTower;
+    [SerializeField] TowerPrint blueTower;
 
     BuildManager buildManager;
 

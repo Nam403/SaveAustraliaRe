@@ -4,12 +4,12 @@ public class PlayerStats : MonoBehaviour
 {
     public static int Money;
     public static int Bonus = -1;
-    public int startMoney = 400;
+    [SerializeField] int startMoney = 400;
 
     public static int Lives;
     public static float LivePercent;
     public static float LiveMinus;
-    public int startLives = 20;
+    [SerializeField] int startLives = 20;
 
     public static int Rounds;
 

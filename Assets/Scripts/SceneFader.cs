@@ -5,8 +5,8 @@ using System.Collections;
 
 public class SceneFader : MonoBehaviour
 {
-    public Image img;
-    public AnimationCurve curve;
+    [SerializeField] Image img;
+    [SerializeField] AnimationCurve curve;
 
     void Start()
     {

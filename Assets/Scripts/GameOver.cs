@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public string menuSceneName = "MainMenu";
+    [SerializeField] string menuSceneName = "MainMenu";
 
-    public SceneFader sceneFader;
+    [SerializeField] SceneFader sceneFader;
 
     public void Retry()
     {

@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class CompleteLevel : MonoBehaviour
 {
-    public SceneFader sceneFader;
+    [SerializeField] SceneFader sceneFader;
 
-    public string menuSceneName = "MainMenu";
+    [SerializeField] string menuSceneName = "MainMenu";
+    [SerializeField] string nextLevel = "Level02";
 
-    public string nextLevel = "Level02";
-    public int levelToUnlock = 2;
+    [SerializeField] int levelToUnlock = 2;
 
     public void Continue()
     {

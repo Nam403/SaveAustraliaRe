@@ -8,27 +8,27 @@ public class Tower : MonoBehaviour
 
     [Header("General")]
 
-    public float range = 2f;
+    [SerializeField] float range = 2f;
 
     [Header("Use bullets")]
-    public GameObject bulletPrefab;
-    public float fireRate = 1f;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] float fireRate = 1f;
     private float fireCountDown = 0f;
 
     [Header("Use laser")]
-    public bool useLaser = false;
+    [SerializeField] bool useLaser = false;
 
-    public int damageOverTime = 30;
-    public float slowPerSec = 0.1f;
+    [SerializeField] int damageOverTime = 30;
+    [SerializeField] float slowPerSec = 0.1f;
 
-    public LineRenderer lineRenderer;
-    public ParticleSystem impactEffect;
+    [SerializeField] LineRenderer lineRenderer;
+    [SerializeField] ParticleSystem impactEffect;
 
     [Header("Unity Setup Fields")]
 
-    public string monsterTag = "Monster";
+    [SerializeField] string monsterTag = "Monster";
 
-    public Transform firePoint;
+    [SerializeField] Transform firePoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class BaseUI : MonoBehaviour
 {
-    public GameObject ui;
+    [SerializeField] GameObject ui;
 
-    public TextMeshProUGUI upgradeCost;
-    public Button upgradeButton;
+    [SerializeField] TextMeshProUGUI upgradeCost;
+    [SerializeField] Button upgradeButton;
 
-    public TextMeshProUGUI sellAmount;
+    [SerializeField] TextMeshProUGUI sellAmount;
 
     private Base target;
 

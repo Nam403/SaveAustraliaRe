@@ -5,8 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static bool GameIsOver;
 
-    public GameObject gameOverUI;
-    public GameObject completeLevelUI;
+    [SerializeField] GameObject gameOverUI;
+    [SerializeField] GameObject completeLevelUI;
 
     void Start()
     {

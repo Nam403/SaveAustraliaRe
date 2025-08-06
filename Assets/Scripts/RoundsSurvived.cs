@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RoundsSurvived : MonoBehaviour
 {
-    public TextMeshProUGUI roundsText;
+    [SerializeField] TextMeshProUGUI roundsText;
 
     void OnEnable()
     {

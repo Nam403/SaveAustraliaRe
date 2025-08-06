@@ -4,12 +4,11 @@ using UnityEngine.EventSystems;
 
 public class Base : MonoBehaviour
 {
-    public Color hoverColor;
-    public Color notEnoughMoneyColor;
-    public Vector3 positionOffset;
+    [SerializeField] Color hoverColor;
+    [SerializeField] Color notEnoughMoneyColor;
+    [SerializeField] Vector3 positionOffset;
 
-    [HideInInspector]
-    public GameObject tower;
+    GameObject tower;
     [HideInInspector]
     public TowerPrint towerPrint;
     [HideInInspector]

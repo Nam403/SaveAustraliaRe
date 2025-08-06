@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class MoneyUI : MonoBehaviour
 {
-    public TextMeshProUGUI moneyText;
+    [SerializeField] TextMeshProUGUI moneyText;
 
     // Update is called once per frame
     void Update()
